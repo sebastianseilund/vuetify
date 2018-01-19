@@ -1,7 +1,6 @@
 require('../../stylus/components/_app.styl')
 
 // Component level mixins
-import AppTheme from './mixins/app-theme'
 import AppBreakpoint from './mixins/app-breakpoint'
 
 // Directives
@@ -10,10 +9,7 @@ import Resize from '../../directives/resize'
 export default {
   name: 'v-app',
 
-  mixins: [
-    AppBreakpoint,
-    AppTheme
-  ],
+  mixins: [AppBreakpoint],
 
   directives: {
     Resize

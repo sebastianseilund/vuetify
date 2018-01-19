@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../dist/vuetify.min.css">
+<script src="https://unpkg.com/vue"></script>
+<script src="../dist/vuetify.min.js"></script>
+<div id="app">
+  <v-app>
+    <v-content>
+      <v-text-field v-model="primary" label="primary"></v-text-field>
+      <v-btn color="primary">button</v-btn>
+    </v-content>
+  </v-app>
+</div>
+<script>
+  Vue.use(Vuetify)
+  new Vue({
+    el: '#app',
+    computed: {
+      primary: {
+        get () { return this.$vuetify.theme.primary },
+        set (val) { this.$vuetify.theme.primary = val }
+      }
+    }
+  })
+</script>
