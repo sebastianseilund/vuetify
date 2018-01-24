@@ -30,7 +30,6 @@
   },
   "description": "Vue.js 2 Semantic Component Framework",
   "devDependencies": {
-    "animejs": "^2.2.0",
     "autoprefixer": "^7.2.3",
     "avoriaz": "^6.3.0",
     "babel-cli": "^6.26.0",
@@ -103,8 +102,11 @@
     "webpack-merge": "^4.1.1",
     "write-file-webpack-plugin": "^4.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animejs": "^2.2.0"
+  },
   "peerDependencies": {
+    "animejs": "^2.2.0",
     "vue": "^2.5.0"
   },
   "engines": {
